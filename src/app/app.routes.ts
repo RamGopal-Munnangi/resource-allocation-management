@@ -5,7 +5,7 @@ import { ResourceTypesComponent } from './components/resource-planning/resource-
 import { AssignResourcesComponent } from './components/resource-planning/assign-resources/assign-resources.component';
 import { ResourceAvailabilityComponent } from './components/resource-planning/resource-availability/resource-availability.component';
 // import { DefineProjectsComponent } from './components/project-management/define-projects/define-projects.component';
-import { AssignTasksComponent } from './components/project-management/assign-tasks/assign-tasks.component';
+import { AssignprojectComponent } from './components/project-management/assign-tasks/assign-projects.component';
 import { TrackProgressComponent } from './components/project-management/track-progress/track-progress.component';
 import { EmployeeManagementComponent } from './components/workforce-hr/employee-management/employee-management.component';
 import { WorkHoursTrackingComponent } from './components/workforce-hr/work-hours-tracking/work-hours-tracking.component';
@@ -30,11 +30,10 @@ export const routes: Routes = [
   { path: '', title: 'Resource Management', component:  ResourceTypesComponent},
   { path: 'notifications', component: NotificatinsComponent },
   { path: '', title: 'login', component: HomeComponent },
-  { path: 'resource', component: ResourceTypesComponent },
-  { path: 'assign-resources-to-projects', component: AssignResourcesComponent },
+  { path: 'resources', component: ResourceTypesComponent },
   { path: 'resource-availability-utilization', component: ResourceAvailabilityComponent },
   { path: 'projects-milestones', component: ProjectsComponent },
-  { path: 'assign-tasks', component: AssignTasksComponent },
+  { path: 'assign-projects', component: AssignprojectComponent },
   { path: 'track-progress-deadlines', component: TrackProgressComponent },
   { path: 'employee-management', component: EmployeeManagementComponent },
   { path: 'work-hours-shift-scheduling', component: WorkHoursTrackingComponent },

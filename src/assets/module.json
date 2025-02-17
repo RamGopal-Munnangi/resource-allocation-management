@@ -4,8 +4,7 @@
     "moduleName": "Resources",
     "submodules": [
       { "id": 101, "name": "Resources", "icon": "pi pi-box" },
-      { "id": 102, "name": "Assign Resources to Projects", "icon": "pi pi-sitemap" },
-      { "id": 103, "name": "Resource Availability & Utilization", "icon": "pi pi-chart-line" }
+      { "id": 102, "name": "Resource Availability & Utilization", "icon": "pi pi-chart-line" }
     ]
   },
   {
@@ -13,7 +12,7 @@
     "moduleName": "Project & Task Management",
     "submodules": [
       { "id": 201, "name": "Projects & Milestones", "icon": "pi pi-calendar" },
-      { "id": 202, "name": "Assign Tasks", "icon": "pi pi-users" },
+      { "id": 202, "name": "Assign Projects", "icon": "pi pi-users" },
       { "id": 203, "name": "Track Progress & Deadlines", "icon": "pi pi-clock" }
     ]
   },
@@ -65,15 +64,6 @@
   },
   {
     "id": 8,
-    "moduleName": "Admin Access/Controls",
-    "submodules": [
-      { "id": 701, "name": "Servers Access", "icon": "pi pi-lock" },
-      { "id": 702, "name": "Database Access", "icon": "pi pi-cloud" },
-      { "id": 703, "name": "Restrict Users", "icon": "pi pi-file" }
-    ]
-  },
-  {
-    "id": 9,
     "moduleName": "Notifications & Alerts",
     "submodules": [
       { "id": 701, "name": "Notifications", "icon": "pi pi-lock" },

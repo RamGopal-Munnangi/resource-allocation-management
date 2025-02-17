@@ -4,6 +4,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+
 .container {
     display: flex;
     height: 100vh;
@@ -18,9 +19,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     left: 0;
     overflow-y: auto; /* Allows scrolling if content overflows */
     width: 280px;
+
     /* padding: 10px; */
   
   }
+.blue-outlined-button {
+    border: 1px solid #007bff !important; /* Blue border color */
+    background: transparent !important; /* Transparent background */
+    color: #007bff !important; /* Blue text color */
+    border-radius: 4px; /* Optional: rounded corners */
+    padding: 5px 15px 10px 10px; /* Optional: padding */
+    font-size: 14px; /* Optional: font size */
+    text-align: right;
+
+  }
+  .blue-outlined-button:hover {
+    background: rgba(0, 123, 255, 0.1) !important; /* Light blue background on hover */}
 .content {  
 width: calc(100% - 280px);
 margin-left: 150px;

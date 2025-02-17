@@ -40,8 +40,8 @@
     <!-- Quick Actions -->
     <div class="quick-actions">
       <span>Quick Actions</span>
-      <button class="btn quick-btn"><i class="pi pi-plus"></i> Add Resource</button>
-      <button class="btn quick-btn"><i class="pi pi-file"></i> Generate Report</button>
+      <button class="btn quick-btn text-xs"><i class="pi pi-plus"></i> Add Resource</button>
+      <button class="btn quick-btn text-xs"><i class="pi pi-file"></i> Generate Report</button>
       <!-- <button class="btn quick-btn"><i class="pi pi-cog"></i> Settings</button> -->
     </div>
     <!--Notifications-->
@@ -49,9 +49,7 @@
       <span>Notifications</span>
       <ul *ngIf="notifications.length > 0; else noNotifications" class="notification-list">
         <li *ngFor="let notification of notifications">
-          <!-- <i class="pi pi-bell"></i>  -->
           <small>{{ notification.message }}</small>
-          <!-- <span class="time">{{ notification.time }}</span> -->
         </li>
         <button *ngIf="emptyNotifications" class="btn border-none outline-none btn-outline-danger" (click)="clearNotifications()"><small>Clear All</small></button>
       </ul> 
@@ -59,11 +57,11 @@
         <p class="no-notifications">No Notifications</p>
       </ng-template>
     </div>
-    
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-toggle">
       <label class="switch">
         <input type="checkbox">
         <span class="slider"></span>
+        
 
   

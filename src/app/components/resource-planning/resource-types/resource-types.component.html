@@ -1,19 +1,21 @@
 <div class="container flex-column margin">
-  <div class="toolbar-container flex border-light-gray col-12 justify-content-evenly">
-    <div class="col-4 flex">
-      <p-button class="p-6" icon="pi pi-plus" class="mr-2" text severity="secondary" (click)="openModal()"></p-button>
-      <p-button icon="pi pi-print" class="mr-2" text severity="secondary"></p-button>
-      <p-button icon="pi pi-upload" text severity="secondary"></p-button>
+  <p-toolbar class="custom-toolbar ">
+
+
+    <div class="p-toolbar-group-left text-lg p-1 font-bold pl-7">
+      Resources
     </div>
-    <div class="col-4">
+    <div class="p-toolbar-group-center">
       <p-iconfield iconPosition="left">
         <input class="search-input" type="text" pInputText placeholder="Search" [(ngModel)]="searchQuery" />
       </p-iconfield>
     </div>
-    <div class="col-4">
-      <p-button (click)="openModal()" label="Add +"></p-button>
+    <div class="p-toolbar-group-right">
+      <p-button (click)="openModal()"   class="blue-outlined-button mr-5">Add +</p-button>
+      <p-button icon="pi pi-print" text severity="secondary"></p-button>
+      <p-button icon="pi pi-upload" class="ml-3"  text severity="secondary"></p-button>
     </div>
-  </div>
+</p-toolbar>
 
   <!-- Table -->
   <div class="table-responsive w-full">
@@ -50,79 +52,18 @@
   </div>
 </div>
 
-<!--Modal-->
-<!-- <div *ngIf="showModal" class="modal-overlay">
-  <p-card class="modal-content mt-100" styleClass="p-card-shadow">
-    <h5 class="text-center mb-3">Add Resource</h5>
-    <form [formGroup]="resourceForm">
-      <div class="p-field p-grid flex">
-        <label class="p-col-2 p-md-2">Name:</label>
-        <div class="p-col-8 p-md-10 flex">
-          <p-floatlabel>
-            <input pInputText id="over_label" formControlName="name" class="form-control" autocomplete="off" />
-            <label for="over_label"><small>First Name</small></label>
-        </p-floatlabel>
-        <p-floatlabel>
-          <input pInputText id="over_label" formControlName="lastname"  autocomplete="off" />
-          <label for="over_label">Last Name</label>
-      </p-floatlabel> 
-        </div>
-      </div>
-      <div class="p-field p-grid flex">
-        <label class="p-col-4 p-md-2">Email:</label>
-        <div class="p-col-8 p-md-10">
-          <input pInputText formControlName="email" type="email" class="form-control" />
-        </div>
-      </div>
-      <div class="p-field p-grid flex">
-        <label class="p-col-2 p-md-2">Type:</label>
-        <div class="p-col-10 p-md-10">
-          <select class="p-col-10 p-md-10" pInputText formControlName="type" class="form-control">
-            <option value="Full-time">Full-time</option>
-            <option value="Part-time">Part-time</option>
-          </select>
-        </div>
-      </div>
-      <div class="p-field p-grid flex">
-        <label class="p-col-2 p-md-2">Department:</label>
-        <div class="p-col-10 p-md-10">
-          <input pInputText formControlName="department" type="text" class="form-control" />
-        </div>
-      </div>
-      <div class="p-field p-grid flex">
-        <label class="p-col-2 p-md-2">Module:</label>
-        <div class="p-col-10 p-md-10">
-          <input pInputText formControlName="module" type="text" class="form-control" />
-        </div>
-      </div>
-      <div class="p-field p-grid flex">
-        <label class="p-col-2 p-md-2">Hire Date:</label>
-        <div class="p-col-10 p-md-10">
-          <input pInputText formControlName="hire_date" type="date" class="form-control" />
-        </div>
-      </div>
-      <div class="p-field p-grid flex">
-        <label class="p-col-2 p-md-2">Status:</label>
-        <div class="p-col-10 p-md-10">
-          <select pInputText formControlName="status" class="form-control">
-            <option value="Active">Active</option>
-            <option value="In-Active">In-Active</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="modal-buttons mt-4">
-        <p-button label="Cancel" (click)="closeModal()" severity="secondary"></p-button>
-        <p-button label="Save" (click)="saveResource()" severity="primary"></p-button>
-      </div>
-    </form>
-  </p-card>
-</div> -->
-
 <div *ngIf="showModal" class="modal-overlay">
-  <p-card class="modal-content mt-100" styleClass="p-card-shadow">
-    <div class="text-center mb-1 text-lg bold">
-      Add Resource</div>
+  <p-card class="modal-content" styleClass="p-card-shadow">
+    <div class="p-col-12 d-flex justify-content-between align-items-center bgclr">
+      <div class="font-bold text-blue text-lg">Add Resource</div>
+      <div class="d-flex">
+        <p-button (click)="saveResource()" class="btn btn-outline-success border-success text-success mx-2">Save</p-button>
+        <p-button (click)="closeModal()" class="btn btn-outline-danger border-danger text-danger">X</p-button>
+      </div>
+    </div>
+
+    <div class="modal-buttons d-flex justify-content-between"></div>
+  
     <form [formGroup]="resourceForm">
       <div class="p-field p-grid flex p-col-12">
         <label class="p-col-2 p-md-2">Name:</label>
@@ -130,63 +71,53 @@
           <input pInputText id="first_name" formControlName="name" class="form-control" autocomplete="off" />
           <label for="first_name"><small class="pl-2">First Name</small></label>
         </p-floatlabel>
-          <p-floatlabel>
-            <input pInputText id="first_name" formControlName="name" class="form-control" autocomplete="off" />
-            <label for="first_name"><small class="pl-2">Last Name</small></label>
-          </p-floatlabel>
-        </div>
+        <p-floatlabel>
+          <input pInputText id="last_name" formControlName="name" class="form-control" autocomplete="off" />
+          <label for="last_name"><small class="pl-2">Last Name</small></label>
+        </p-floatlabel>
+      </div>
       <div class="p-field p-grid p-col-12 flex">
         <label class="p-col-2 p-md-2">Email:</label>
         <div class="p-col-10 p-md-10">
           <input pInputText formControlName="email" type="email" class="form-control" />
         </div>
       </div>
-
       <div class="p-field p-grid p-col-12 flex">
         <label class="p-col-2 p-md-2">Type:</label>
-        <div class="p-col-10 p-md-10">
+        <div>
           <select pInputText formControlName="type" class="form-control">
             <option value="Full-time">Full-time</option>
             <option value="Part-time">Part-time</option>
           </select>
         </div>
       </div>
-
-      <div class="p-field p-grid">
-        <label class="p-col-12 p-md-2">Department:</label>
-        <div class="p-col-12 p-md-10">
+      <div class="p-field p-grid flex p-col-12">
+        <label class="p-col-2 p-md-2">Dept:</label>
+        <div class="p-col-10 p-md-10">
           <input pInputText formControlName="department" type="text" class="form-control" />
         </div>
       </div>
-
-      <div class="p-field p-grid">
-        <label class="p-col-12 p-md-2">Module:</label>
-        <div class="p-col-12 p-md-10">
+      <div class="p-field p-grid flex p-col-12">
+        <label class="p-col-2 p-md-2">Module:</label>
+        <div class="p-col-10 p-md-10">
           <input pInputText formControlName="module" type="text" class="form-control" />
         </div>
       </div>
-
-      <div class="p-field p-grid">
-        <label class="p-col-12 p-md-2">Hire Date:</label>
-        <div class="p-col-12 p-md-10">
+      <div class="p-field p-grid flex p-col-12">
+        <label class="p-col-2 p-md-2">DOJ:</label>
+        <div class="p-col-10 p-md-10">
           <input pInputText formControlName="hire_date" type="date" class="form-control" />
         </div>
       </div>
-
-      <div class="p-field p-grid">
-        <label class="p-col-12 p-md-2">Status:</label>
-        <div class="p-col-12 p-md-10">
+      <div class="p-field p-grid flex p-col-12">
+        <label class="p-col-2 p-md-2">Status:</label>
+        <div>
           <select pInputText formControlName="status" class="form-control">
             <option value="Active">Active</option>
             <option value="In-Active">In-Active</option>
           </select>
         </div>
       </div>
-
-      <div class="modal-buttons mt-4 d-flex justify-content-between">
-        <p-button label="Cancel" (click)="closeModal()" severity="secondary"></p-button>
-        <p-button label="Save" (click)="saveResource()" severity="primary"></p-button>
-      </div>
     </form>
-  </p-card>
+  </p-card>  
 </div>

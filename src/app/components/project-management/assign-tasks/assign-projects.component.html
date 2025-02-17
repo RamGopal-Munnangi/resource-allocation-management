@@ -1,0 +1,40 @@
+<p-toolbar class="custom-toolbar">
+  <div class="p-toolbar-group-left text-lg p-1 font-bold pl-7">
+    Projects
+  </div>
+  <div class="p-toolbar-group-right pr-7">
+    <button 
+      pButton 
+      class="blue-outlined-button">
+      Assign Project
+    </button>
+  </div>
+</p-toolbar>
+<div class="p-2">
+  <table class="table table-bordered font-medium p-4">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Project</th>
+        <th>Module</th>
+        <th>Resource</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (task of assignProjects; track task) {
+      <tr>
+        <td>{{ task['S.No'] }}</td>
+        <td>{{ task.Project }}</td>
+        <td>{{ task.Module }}</td>
+        <td>{{ task.Resource }}</td>
+        <td>{{ task['Start Date'] }}</td>
+        <td>{{ task['End Date'] }}</td>
+        <td>{{ task.Status }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

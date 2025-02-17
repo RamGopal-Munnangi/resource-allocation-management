@@ -10,10 +10,24 @@
 :host ::ng-deep .col-4 {
   padding: 0;
 }
+.blue-outlined-button {
+  border: 1px solid #007bff !important; /* Blue border color */
+  background: transparent !important; /* Transparent background */
+  color: #007bff !important; /* Blue text color */
+  border-radius: 4px; /* Optional: rounded corners */
+  padding: 5px 15px; /* Optional: padding */
+  font-size: 14px; /* Optional: font size */
+  text-align: right;
+}
+.blue-outlined-button:hover {
+  background: rgba(0, 123, 255, 0.1) !important; /* Light blue background on hover */}
 
+.blue-outlined-button:hover {
+  background: rgba(0, 123, 255, 0.1) !important; /* Light blue background on hover */
+}
 .toolbar-container {
   border: 1px solid lightgray;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   height: 50px;
 }
@@ -158,4 +172,21 @@ label {
 height: 25px;
 border-radius: 0;
 }
+:host ::ng-deep p-toolbar.custom-toolbar .p-toolbar {
+  border-bottom: 1px solid lightgray !important;
+  border-top: 1px solid lightgray !important;
+  background-color: #f9f9fa !important;
+  padding: 8px;
+}
+:host ::ng-deep .form-control[_ngcontent-ng-c2973063129] {
+  height: 30px !important;
+  border-radius: 0% !important;
+  padding-top: 25px !important;
+}
+:host ::ng-deep .bgclr {
+  border-bottom: 1px solid lightgray !important;
+  /* border-top: 1px solid lightgray !important; */
+  background-color: #f9f9fa !important;
+}
+
 
