@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+  }
+  .sidebar {
+    background-color: #1e2a38; /* Dark background */
+    color: white;
+    height: 100vh; /* Full height */
+    position: fixed; /* Keeps it on the left */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    width: 280px;
+    /* padding: 10px; */
+  
+  }
+.content {  
+width: calc(100% - 280px);
+margin-left: 150px;
+margin-top: 20px;
+  padding: 20px;
+  background-color:white;
+  flex-grow: 1;
+}
+.toolbar {
+    width: calc(100% - 280px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 40px;
+}
+:host ::ng-deep .btn {
+    transition: color 0.3s ease;
+  }
+  
+  :host ::ng-deep .btn:hover {
+    color: #d32f2f; /* Adjust the hover color if needed */
+  }
+  .pi {
+    font-size: .8rem; /* Adjust size */
+  }
+  .fixedtableheader {
+    position: sticky;
+    top: 0;    
+    z-index: 999; 
+    background-color: white;
+  }

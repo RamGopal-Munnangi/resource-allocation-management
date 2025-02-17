@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "moduleName": "Resources",
+    "submodules": [
+      { "id": 101, "name": "Resources", "icon": "pi pi-box" },
+      { "id": 102, "name": "Assign Resources to Projects", "icon": "pi pi-sitemap" },
+      { "id": 103, "name": "Resource Availability & Utilization", "icon": "pi pi-chart-line" }
+    ]
+  },
+  {
+    "id": 2,
+    "moduleName": "Project & Task Management",
+    "submodules": [
+      { "id": 201, "name": "Projects & Milestones", "icon": "pi pi-calendar" },
+      { "id": 202, "name": "Assign Tasks", "icon": "pi pi-users" },
+      { "id": 203, "name": "Track Progress & Deadlines", "icon": "pi pi-clock" }
+    ]
+  },
+  {
+    "id": 3,
+    "moduleName": "Workforce & HR Management",
+    "submodules": [
+      { "id": 301, "name": "Employee Management", "icon": "pi pi-id-card" },
+      { "id": 302, "name": "Work Hours & Shift Scheduling", "icon": "pi pi-calendar-clock" },
+      { "id": 303, "name": "Performance & KPI Monitoring", "icon": "pi pi-chart-bar" }
+    ]
+  },
+  {
+    "id": 4,
+    "moduleName": "Leave Management",
+    "submodules": [
+      { "id": 401, "name": "Reports & Analytics", "icon": "pi pi-box" },
+      { "id": 403, "name": "Notification & Alerts", "icon": "pi pi-shopping-cart" },
+      { "id": 402, "name": "Leaves Application", "icon": "pi pi-wrench" }
+
+    ]
+  },
+  {
+    "id": 5,
+    "moduleName": "Financial & Budgeting",
+    "submodules": [
+      { "id": 501, "name": "Cost Estimation & Budgeting", "icon": "pi pi-dollar" },
+      { "id": 502, "name": "Expense Tracking & Approvals", "icon": "pi pi-credit-card" },
+      { "id": 503, "name": "Billing & Invoicing for Resources", "icon": "pi pi-file" }
+    ]
+  },
+  {
+    "id": 6,
+    "moduleName": "Reporting & Analytics",
+    "submodules": [
+      { "id": 601, "name": "Resource Utilization Reports", "icon": "pi pi-chart-pie" },
+      { "id": 602, "name": "Project Progress & KPI Reports", "icon": "pi pi-chart-line" },
+      { "id": 603, "name": "Cost & Financial Analysis", "icon": "pi pi-chart-bar" }
+    ]
+  },
+  {
+    "id": 7,
+    "moduleName": "Administration & Access Control",
+    "submodules": [
+      { "id": 701, "name": "User Roles & Permissions", "icon": "pi pi-lock" },
+      { "id": 702, "name": "API & Data Integration", "icon": "pi pi-cloud" },
+      { "id": 703, "name": "System Logs & Audits", "icon": "pi pi-file" }
+    ]
+  },
+  {
+    "id": 8,
+    "moduleName": "Admin Access/Controls",
+    "submodules": [
+      { "id": 701, "name": "Servers Access", "icon": "pi pi-lock" },
+      { "id": 702, "name": "Database Access", "icon": "pi pi-cloud" },
+      { "id": 703, "name": "Restrict Users", "icon": "pi pi-file" }
+    ]
+  },
+  {
+    "id": 9,
+    "moduleName": "Notifications & Alerts",
+    "submodules": [
+      { "id": 701, "name": "Notifications", "icon": "pi pi-lock" },
+      { "id": 702, "name": "Custom & Emergency Notifications", "icon": "pi pi-cloud" },
+      { "id": 703, "name": "Leave Reminders", "icon": "pi pi-file" }
+    ]
+  }
+]

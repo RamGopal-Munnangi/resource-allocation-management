@@ -1,0 +1,132 @@
+[
+  {
+      "id": "25K64F8472",
+      "name": "Michael Johnson",
+      "email": "michael.johnson@examplecorp.com",
+      "type": "Full-time",
+      "department": "API Development",
+      "module": "",
+      "hire_date": "10/21/2013",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F5921",
+      "name": "James Anderson",
+      "email": "james.anderson@examplecorp.com",
+      "type": "Full-time",
+      "department": "API Development",
+      "module": "",
+      "hire_date": "04/20/2016",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F6738",
+      "name": "Robert Martinez",
+      "email": "robert.martinez@examplecorp.com",
+      "type": "Full-time",
+      "department": "Delivery Management",
+      "module": "",
+      "hire_date": "01/03/2019",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F2940",
+      "name": "William Thompson",
+      "email": "william.thompson@examplecorp.com",
+      "type": "Full-time",
+      "department": "Delivery Management",
+      "module": "",
+      "hire_date": "01/05/2018",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F4812",
+      "name": "David White",
+      "email": "david.white@examplecorp.com",
+      "type": "Full-time",
+      "department": "Quality Assurance",
+      "module": "Project",
+      "hire_date": "01/05/2022",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F3759",
+      "name": "John Lewis",
+      "email": "john.lewis@examplecorp.com",
+      "type": "Full-time",
+      "department": "API Development",
+      "module": "",
+      "hire_date": "01/01/2022",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F9861",
+      "name": "Richard Walker",
+      "email": "richard.walker@examplecorp.com",
+      "type": "Full-time",
+      "department": "API Development",
+      "module": "",
+      "hire_date": "01/03/2022",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F4286",
+      "name": "Joseph Allen",
+      "email": "joseph.allen@examplecorp.com",
+      "type": "Full-time",
+      "department": "UI Development",
+      "module": "",
+      "hire_date": "09/10/2023",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F5032",
+      "name": "Charles Scott",
+      "email": "charles.scott@examplecorp.com",
+      "type": "Full-time",
+      "department": "Dev/QA",
+      "module": "Quote",
+      "hire_date": "06/02/2024",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F9367",
+      "name": "Thomas Adams",
+      "email": "thomas.adams@examplecorp.com",
+      "type": "Full-time",
+      "department": "Dev/QA",
+      "module": "Project",
+      "hire_date": "04/04/2024",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F1186",
+      "name": "Matthew Baker",
+      "email": "matthew.baker@examplecorp.com",
+      "type": "Full-time",
+      "department": "Quality Assurance",
+      "module": "Quote",
+      "hire_date": "11/10/2021",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F2317",
+      "name": "Anthony Rodriguez",
+      "email": "anthony.rodriguez@examplecorp.com",
+      "type": "Full-time",
+      "department": "Quality Assurance",
+      "module": "Purchases",
+      "hire_date": "01/12/2023",
+      "status": "Active"
+  },
+  {
+      "id": "25K64F5291",
+      "name": "Andrew Gonzalez",
+      "email": "andrew.gonzalez@examplecorp.com",
+      "type": "Full-time",
+      "department": "SCM",
+      "module": "",
+      "hire_date": "10/21/2022",
+      "status": "Active"
+  }
+]

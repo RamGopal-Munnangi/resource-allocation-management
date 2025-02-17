@@ -1,0 +1,200 @@
+
+.list-group-item {
+  background: none;
+  color: white;
+  border: none;
+  /* padding: 10px 15px; */
+}
+
+.list-group-item a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+/* Right Sidebar */
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 138px;
+  height: 100%;
+  background-color: #1f2a38;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-role {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Quick Actions */
+.quick-actions {
+  width: 100%;
+  text-align: center;
+}
+.notifications {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  scrollbar-width: thin; /* For Firefox */
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.notification-list li {
+  padding: 8px;
+  border-bottom: 1px solid #4a5a6b;
+  font-size: 14px;
+}
+.no-notifications {
+  color: gray;
+  font-style: italic;
+  margin-top: 10px;
+}
+.clear-btn {
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.quick-actions h5 {
+  margin-bottom: 10px;
+}
+
+.quick-btn {
+  width: 100%;
+  background-color: #3a4a5b;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-btn:hover {
+  background-color: #4a5a6b;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  margin-top: auto;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.list-group-item:hover {
+  background-color: #2b3a4b;
+}
+
+/* 🔹 Modules */
+.module-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px; */
+  cursor: pointer;
+  
+}
+
+.module-text {
+  flex-grow: 1;
+  /* margin-left: 10px; */
+  font-weight: bold;
+}
+
+/* 🔹 Chevron Icon */
+.chevron-icon {
+  color: white;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* 🔹 Submodules */
+.submodules {
+  padding-left: 15px;
+  background-color: #2b3a4b;
+  border-left: 3px solid #3a4a5b;
+}
+
+.submodule-item {
+  padding: 2px;
+}
+
+.submodule-text {
+  margin-left: 2px;
+  font-size: 14px;
+}
+

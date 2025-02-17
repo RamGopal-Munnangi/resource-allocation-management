@@ -1,0 +1,45 @@
+[
+    {
+      "type": "resource",
+      "message": "New resource added : [Michael]",
+      "timestamp": "2025-02-14T10:00:00Z"
+    },
+    {
+      "type": "project",
+      "message": "Project SA Lite assigned to Chris",
+      "timestamp": "2025-02-14T10:05:00Z"
+    },
+    {
+      "type": "task",
+      "message": "Christopher has completed the assigned task",
+      "timestamp": "2025-02-14T10:10:00Z"
+    },
+    {
+      "type": "resource",
+      "message": "Resource availability updated for [API Dev Team]",
+      "timestamp": "2025-02-14T10:15:00Z"
+    },
+    {
+      "type": "task",
+      "message": "A new task has been assigned to you",
+      "timestamp": "2025-02-14T10:20:00Z"
+    },
+
+      {
+        "type": "project",
+        "message": "New milestone added to Project Alpha",
+        "timestamp": "2025-02-15T08:45:00Z"
+      },
+      {
+        "type": "project",
+        "message": "Project deadline extended by 5 days",
+        "timestamp": "2025-02-15T14:00:00Z"
+      },
+      {
+        "type": "approval",
+        "message": "Approval required for Task C",
+        "timestamp": "2025-02-16T09:20:00Z"
+      }
+    ]
+    
+  

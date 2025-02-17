@@ -1,0 +1,13 @@
+<p-dialog header="Change Status" [(visible)]="display" [modal]="true" [closable]="false" [style]="{width: '300px'}">
+    <div class="p-field-radiobutton">
+      <p-radioButton name="status" value="Active" label="Active" [(ngModel)]="status"></p-radioButton>
+    </div>
+    <div class="p-field-radiobutton">
+      <p-radioButton name="status" value="In-Active" label="Inactive" [(ngModel)]="status"></p-radioButton>
+    </div>
+    <p-footer>
+      <button pButton type="button" label="Cancel" (click)="onCancel()"></button>
+      <button pButton type="button" label="Save" (click)="onSave()" class="p-button-primary"></button>
+    </p-footer>
+  </p-dialog>
+  

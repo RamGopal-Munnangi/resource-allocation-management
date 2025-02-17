@@ -1,0 +1,69 @@
+<div class="row">
+  <!-- Left Sidebar -->
+  <nav class="sidebar h-100 text-left">
+    <div class="text-center p-1 pt-2">
+      <span class="text-lg font-bold">Resource Planning & Allocation</span>
+    </div>
+    <ul class="list-group mt-10">
+      <li class="list-group-item" *ngFor="let module of modules; let i = index">
+        <a (click)="toggleModule(i)" class="module-item">
+          <span class="module-text font-medium">{{ module.moduleName }}</span>
+          <i class="pi chevron-icon" [ngClass]="module.expanded ? 'pi-chevron-down' : 'pi-chevron-right'"></i>
+        </a>
+        <ul *ngIf="module.expanded" class="list-group submodules">
+          <li class="list-group-item submodule-item" *ngFor="let submodule of module.submodules">
+            <a [routerLink]="getRouterLink(submodule.name)" [routerLinkActive]="'active-submodule'">
+              <span class="submodule-text">{{ submodule.name }}</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Toolbar (Top) -->
+  <div class="toolbar bg-light d-flex justify-content-end align-items-center p-2">
+    <i class="pi pi-bell pt-1 pr-1 text-lg cursor-pointer pr-5" (click)="goToNotifications()"></i>
+    <button class="btn border-none outline-none btn-outline-danger">
+      <i class="pi pi-sign-out pt-1 pr-1 text-lg cursor-pointer"></i>Sign Out
+    </button>
+  </div>  
+  <!-- Right Sidebar -->
+  <aside class="right-sidebar">
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <img src="assets/profile.jpg" class="profile-pic" alt="User Profile">
+      <i class="pi pi-user" style="font-size: 2.5rem"></i>
+      <h4 class="profile-name">John Doe</h4>
+      <p class="profile-role">Admin</p>
+    </div>
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <span>Quick Actions</span>
+      <button class="btn quick-btn"><i class="pi pi-plus"></i> Add Resource</button>
+      <button class="btn quick-btn"><i class="pi pi-file"></i> Generate Report</button>
+      <!-- <button class="btn quick-btn"><i class="pi pi-cog"></i> Settings</button> -->
+    </div>
+    <!--Notifications-->
+    <div class="notifications">
+      <span>Notifications</span>
+      <ul *ngIf="notifications.length > 0; else noNotifications" class="notification-list">
+        <li *ngFor="let notification of notifications">
+          <!-- <i class="pi pi-bell"></i>  -->
+          <small>{{ notification.message }}</small>
+          <!-- <span class="time">{{ notification.time }}</span> -->
+        </li>
+        <button *ngIf="emptyNotifications" class="btn border-none outline-none btn-outline-danger" (click)="clearNotifications()"><small>Clear All</small></button>
+      </ul> 
+      <ng-template #noNotifications>
+        <p class="no-notifications">No Notifications</p>
+      </ng-template>
+    </div>
+    
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+
+  
