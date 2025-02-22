@@ -1,23 +1,23 @@
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="card p-4 shadow" style="width: 400px;">
-      <h2 class="text-center mb-4">Login</h2>
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input pInputText formControlName="username" id="username" class="form-control" />
-          <div class="text-danger">
-            Username is required
-          </div>
+<p-card>
+  <div class="p-fluid">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="p-field">
+        <label for="loginID">Login ID</label>
+        <input id="loginID" type="text" pInputText formControlName="loginID" />
+        <div *ngIf="loginForm.get('loginID')?.invalid && loginForm.get('loginID')?.touched" class="p-error">
+          <small *ngIf="loginForm.get('loginID')?.hasError('required')">Login ID is required.</small>
+          <small *ngIf="loginForm.get('loginID')?.hasError('minlength')">Login ID must be at least 4 characters long.</small>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input pPassword formControlName="password" id="password" class="form-control" feedback="false" />
-          <div class="text-danger">
-            Password is required
-          </div>
+      </div>
+      <div class="p-field">
+        <label for="password">Password</label>
+        <input id="password" type="password" pInputText formControlName="password" />
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="p-error">
+          <small *ngIf="loginForm.get('password')?.hasError('required')">Password is required.</small>
+          <small *ngIf="loginForm.get('password')?.hasError('minlength')">Password must be at least 6 characters long.</small>
         </div>
-        <button pButton type="submit" label="Login" class="w-100 p-button-primary"></button>
-      </form>
-    </div>
+      </div>
+      <button pButton type="submit" label="Login" [disabled]="loginForm.invalid"></button>
+    </form>
   </div>
-  
+</p-card>

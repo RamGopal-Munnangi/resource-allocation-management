@@ -1,14 +1,15 @@
 <div class="container flex-column margin">
   <p-toolbar class="custom-toolbar ">
-
-
     <div class="p-toolbar-group-left text-lg p-1 font-bold pl-7">
       Resources
     </div>
-    <div class="p-toolbar-group-center">
+    <div class="p-toolbar-group-center flex">
       <p-iconfield iconPosition="left">
         <input class="search-input" type="text" pInputText placeholder="Search" [(ngModel)]="searchQuery" />
       </p-iconfield>
+      <i class="pi pi-search custom-icon"></i>
+      <i class="pi pi-refresh custom-icon"></i>
+      <i class="pi pi-filter custom-icon"></i>
     </div>
     <div class="p-toolbar-group-right">
       <p-button (click)="openModal()"   class="blue-outlined-button mr-5">Add +</p-button>
@@ -16,10 +17,9 @@
       <p-button icon="pi pi-upload" class="ml-3"  text severity="secondary"></p-button>
     </div>
 </p-toolbar>
-
   <!-- Table -->
   <div class="table-responsive w-full">
-    <table class="table table-bordered">
+    <table class="table table-bordered w-100">
       <thead class="fixedtableheader">
         <tr>
           <th>Employee ID</th>
@@ -50,6 +50,7 @@
       </tbody>
     </table>
   </div>
+  
 </div>
 
 <div *ngIf="showModal" class="modal-overlay">
@@ -61,12 +62,10 @@
         <p-button (click)="closeModal()" class="btn btn-outline-danger border-danger text-danger">X</p-button>
       </div>
     </div>
-
     <div class="modal-buttons d-flex justify-content-between"></div>
-  
     <form [formGroup]="resourceForm">
       <div class="p-field p-grid flex p-col-12">
-        <label class="p-col-2 p-md-2">Name:</label>
+        <label class="p-col-4 p-md-2">Name:</label>
         <p-floatlabel class="pr-2">
           <input pInputText id="first_name" formControlName="name" class="form-control" autocomplete="off" />
           <label for="first_name"><small class="pl-2">First Name</small></label>
@@ -77,8 +76,8 @@
         </p-floatlabel>
       </div>
       <div class="p-field p-grid p-col-12 flex">
-        <label class="p-col-2 p-md-2">Email:</label>
-        <div class="p-col-10 p-md-10">
+        <label class="p-col-4 p-md-2">Email:</label>
+        <div class="p-col-8 p-md-10">
           <input pInputText formControlName="email" type="email" class="form-control" />
         </div>
       </div>
@@ -94,7 +93,7 @@
       <div class="p-field p-grid flex p-col-12">
         <label class="p-col-2 p-md-2">Dept:</label>
         <div class="p-col-10 p-md-10">
-          <input pInputText formControlName="department" type="text" class="form-control" />
+          <input pInputText formControlName="department" type="text" class="form-control"/>
         </div>
       </div>
       <div class="p-field p-grid flex p-col-12">

@@ -11,8 +11,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     justify-content: start;
   }
   .sidebar {
-    background-color: #1e2a38; /* Dark background */
-    color: white;
+    background-color: #f5f7fa; /* Dark background */
+    color: black;
     height: 100vh; /* Full height */
     position: fixed; /* Keeps it on the left */
     top: 0;
@@ -34,7 +34,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   }
   .blue-outlined-button:hover {
-    background: rgba(0, 123, 255, 0.1) !important; /* Light blue background on hover */}
+    background: lightgray !important; /* Light blue background on hover */}
 .content {  
 width: calc(100% - 280px);
 margin-left: 150px;
@@ -56,7 +56,7 @@ margin-top: 20px;
   }
   
   :host ::ng-deep .btn:hover {
-    color: #d32f2f; /* Adjust the hover color if needed */
+    color:lightgray; /* Adjust the hover color if needed */
   }
   .pi {
     font-size: .8rem; /* Adjust size */
