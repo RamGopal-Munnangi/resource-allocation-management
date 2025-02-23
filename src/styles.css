@@ -19,6 +19,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     left: 0;
     overflow-y: auto; /* Allows scrolling if content overflows */
     width: 280px;
+    border-right: 1px solid lightgray;
 
     /* padding: 10px; */
   
@@ -48,7 +49,7 @@ margin-top: 20px;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000;  
     height: 40px;
 }
 :host ::ng-deep .btn {
@@ -67,3 +68,16 @@ margin-top: 20px;
     z-index: 999; 
     background-color: white;
   }
+  .text-blue-600 {
+    color: blue;
+  }
+.text-green-600 {
+  color: green !important;
+}
+
+.text-red-600 {
+  color: red !important; 
+}
+.text-yellow-600 {
+  color: rgb(195, 195, 3) !important;
+} 

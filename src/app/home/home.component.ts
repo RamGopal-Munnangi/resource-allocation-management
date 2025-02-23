@@ -12,6 +12,7 @@ import { NotificationsService } from '../core/services/notifications.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  selectedSubmodule: string | null = null;
   notifications: any[] = [];
   emptyNotifications: boolean = true;
   modules: {
@@ -53,7 +54,9 @@ export class HomeComponent {
     this.notifications = [];
     this.emptyNotifications = false;
   }
-
+  selectSubmodule(submoduleName: string): void {
+    this.selectedSubmodule = submoduleName;
+  }
   toggleModule(index: number): void {
     this.modules.forEach((module, i) => {
       module.expanded = i === index ? !module.expanded : false;

@@ -22,3 +22,44 @@
   
   .p-card-body {
     padding: 0;}
+    .p-datatable-notifications thead {
+      background-color: lightgray;
+    }
+    
+    .p-datatable-notifications th,
+    .p-datatable-notifications td {
+      border: 1px solid lightgray;
+    }
+    .search-input {
+      border: 1px solid lightgray !important;
+      border-radius: 0;
+      padding: 5px;
+      height: 30px;
+      width: 100%;
+      justify-self: center;
+    }
+    
+    input {
+      width: 100%;
+      padding: 8px 8px 8px 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .custom-icon {
+      background-color: transparent; /* Transparent background */
+      border: 1px solid lightgray; /* Light gray border */
+      border-radius: 0px; /* Optional: to make the border rounded */
+      padding: 4px; /* Optional: to add some padding inside the border */
+      font-size: 14px;
+      padding-top: 8px;
+    }
+    
+    :host ::ng-deep p-toolbar.custom-toolbar .p-toolbar {
+      border-bottom: 1px solid lightgray !important;
+      border-top: 1px solid lightgray !important;
+      background-color: #f9f9fa !important;
+      padding: 8px;
+    }
+    
+    

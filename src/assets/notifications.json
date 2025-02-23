@@ -1,45 +1,117 @@
 [
-    {
-      "type": "resource",
-      "message": "New resource added : [Michael]",
-      "timestamp": "2025-02-14T10:00:00Z"
-    },
-    {
-      "type": "project",
+  {
+      "type": "Resource",
+      "message": "New resource added: [Michael]",
+      "timestamp": "02/14/2025 10:00 AM"
+  },
+  {
+      "type": "Project",
       "message": "Project SA Lite assigned to Chris",
-      "timestamp": "2025-02-14T10:05:00Z"
-    },
-    {
-      "type": "task",
+      "timestamp": "02/14/2025 10:05 AM"
+  },
+  {
+      "type": "Task",
       "message": "Christopher has completed the assigned task",
-      "timestamp": "2025-02-14T10:10:00Z"
-    },
-    {
-      "type": "resource",
+      "timestamp": "02/14/2025 10:10 AM"
+  },
+  {
+      "type": "Resource",
       "message": "Resource availability updated for [API Dev Team]",
-      "timestamp": "2025-02-14T10:15:00Z"
-    },
-    {
-      "type": "task",
+      "timestamp": "02/14/2025 10:15 AM"
+  },
+  {
+      "type": "Task",
       "message": "A new task has been assigned to you",
-      "timestamp": "2025-02-14T10:20:00Z"
-    },
-
-      {
-        "type": "project",
-        "message": "New milestone added to Project Alpha",
-        "timestamp": "2025-02-15T08:45:00Z"
-      },
-      {
-        "type": "project",
-        "message": "Project deadline extended by 5 days",
-        "timestamp": "2025-02-15T14:00:00Z"
-      },
-      {
-        "type": "approval",
-        "message": "Approval required for Task C",
-        "timestamp": "2025-02-16T09:20:00Z"
-      }
-    ]
-    
-  
+      "timestamp": "02/14/2025 10:20 AM"
+  },
+  {
+      "type": "Project",
+      "message": "New milestone added to Project Alpha",
+      "timestamp": "02/15/2025 08:45 AM"
+  },
+  {
+      "type": "Project",
+      "message": "Project deadline extended by 5 days",
+      "timestamp": "02/15/2025 02:00 PM"
+  },
+  {
+      "type": "Approval",
+      "message": "Approval required for Task C",
+      "timestamp": "02/16/2025 09:20 AM"
+  },
+  {
+      "type": "HR",
+      "message": "[Employee Name] has joined the team!",
+      "timestamp": "02/16/2025 09:30 AM"
+  },
+  {
+      "type": "HR",
+      "message": "Performance review pending for Zimmy",
+      "timestamp": "02/16/2025 09:35 AM"
+  },
+  {
+      "type": "HR",
+      "message": "Leave request approved for Anderson",
+      "timestamp": "02/16/2025 09:40 AM"
+  },
+  {
+      "type": "HR",
+      "message": "Timesheet submission due today!",
+      "timestamp": "02/16/2025 09:45 AM"
+  },
+  {
+      "type": "HR",
+      "message": "Mickey is on leave today",
+      "timestamp": "02/16/2025 09:50 AM"
+  },
+  {
+      "type": "Task",
+      "message": "Deadline approaching: SA 3.8 Delivery due in 2 days!",
+      "timestamp": "02/16/2025 10:00 AM"
+  },
+  {
+      "type": "Task",
+      "message": "SA UI Task marked as complete by Harry",
+      "timestamp": "02/16/2025 10:05 AM"
+  },
+  {
+      "type": "Project",
+      "message": "New milestone added to SA Alpha",
+      "timestamp": "02/16/2025 10:10 AM"
+  },
+  {
+      "type": "Project",
+      "message": "Project deadline extended by [X] days",
+      "timestamp": "02/16/2025 10:15 AM"
+  },
+  {
+      "type": "Approval",
+      "message": "Approval required for [Task Name]",
+      "timestamp": "02/16/2025 10:20 AM"
+  },
+  {
+      "type": "System",
+      "message": "System maintenance scheduled for [Date & Time]",
+      "timestamp": "02/16/2025 10:25 AM"
+  },
+  {
+      "type": "System",
+      "message": "New system update available!",
+      "timestamp": "02/16/2025 10:30 AM"
+  },
+  {
+      "type": "System",
+      "message": "Unauthorized login attempt detected!",
+      "timestamp": "02/16/2025 10:35 AM"
+  },
+  {
+      "type": "System",
+      "message": "Backup completed successfully",
+      "timestamp": "02/16/2025 10:40 AM"
+  },
+  {
+      "type": "System",
+      "message": "Your session is about to expire",
+      "timestamp": "02/16/2025 10:45 AM"
+  }
+]

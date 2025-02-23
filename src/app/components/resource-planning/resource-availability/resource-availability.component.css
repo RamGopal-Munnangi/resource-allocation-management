@@ -1,0 +1,79 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.toolbar-container {
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.table th,
+.table td {
+  padding: 10px; /* Reduced padding */
+  font-size: 13px; /* Reduced font size */
+  height: 20px; /* Reduced column height */
+  white-space: nowrap; /* Prevent breaking text */
+}
+
+.table th {
+  background-color: #f2f2f2; /* Header background color */
+}
+
+.table th,
+.table td {
+  text-align: left;
+  border: 1px solid lightgray;
+}
+
+.table th.project-name,
+.table td.project-name,
+.table th.role,
+.table td.role,
+.table th.shift-timing,
+.table td.shift-timing {
+  width: 150px; /* Fixed width for these columns */
+}
+
+.table th {
+  width: auto; /* Allow auto width adjustment for other columns */
+}
+
+.search-input {
+  border: 1px solid lightgray !important;
+  border-radius: 0;
+  padding: 5px;
+  height: 30px;
+  width: 100%;
+  justify-self: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px 8px 8px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-icon {
+  background-color: transparent; /* Transparent background */
+  border: 1px solid lightgray; /* Light gray border */
+  border-radius: 0px; /* Optional: to make the border rounded */
+  padding: 4px; /* Optional: to add some padding inside the border */
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+:host ::ng-deep p-toolbar.custom-toolbar .p-toolbar {
+  border-bottom: 1px solid lightgray !important;
+  border-top: 1px solid lightgray !important;
+  background-color: #f9f9fa !important;
+  padding: 8px;
+}
+.table th {
+  font-size: 15px; 
+} 
+
+

@@ -5,12 +5,9 @@ import { ResourcesService } from '../../../core/services/resources.service'; // 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
-import { SplitButton } from 'primeng/splitbutton';
 import { InputTextModule } from 'primeng/inputtext';
 import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
 import { CardModule } from 'primeng/card';
-import { MenuItem } from 'primeng/api';
 import { FloatLabel } from 'primeng/floatlabel';
 
 @Component({
@@ -19,7 +16,7 @@ import { FloatLabel } from 'primeng/floatlabel';
   imports: [
     CommonModule, FormsModule, ReactiveFormsModule, // Added ReactiveFormsModule
     ButtonModule, ToolbarModule, InputTextModule, 
-    IconField,FloatLabel, InputIcon, SplitButton, CardModule
+    IconField,FloatLabel, CardModule
   ],
   templateUrl: './resource-types.component.html',
   styleUrls: ['./resource-types.component.css']

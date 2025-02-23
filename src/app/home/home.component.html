@@ -12,7 +12,12 @@
         </a>
         <ul *ngIf="module.expanded" class="list-group submodules">
           <li class="list-group-item submodule-item" *ngFor="let submodule of module.submodules">
-            <a [routerLink]="getRouterLink(submodule.name)" [routerLinkActive]="'active-submodule'">
+            <a 
+              [routerLink]="getRouterLink(submodule.name)"
+              [routerLinkActive]="'active-submodule'"
+              [ngClass]="{'text-blue-600': selectedSubmodule === submodule.name}"
+              (click)="selectSubmodule(submodule.name)"
+            >
               <span class="submodule-text">{{ submodule.name }}</span>
             </a>
           </li>
@@ -20,7 +25,7 @@
       </li>
     </ul>
   </nav>
-
+  
   <!-- Toolbar (Top) -->
   <div class="toolbar bg-light d-flex justify-content-end align-items-center p-2">
     <i class="pi pi-bell pt-1 pr-1 text-lg cursor-pointer pr-5" (click)="goToNotifications()"></i>

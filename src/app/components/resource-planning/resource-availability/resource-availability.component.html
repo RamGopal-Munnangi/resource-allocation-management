@@ -1,1 +1,69 @@
-<p>You can get resource Availability here!</p>
+<p-toolbar class="custom-toolbar">
+  <div class="p-toolbar-group-left text-lg p-1 font-bold pl-7">
+    Resource Availability & Utilization
+  </div>
+  <div class="p-toolbar-group-center flex">
+    <p-iconfield iconPosition="left">
+      <input class="search-input" type="text" pInputText placeholder="Search"/>
+    </p-iconfield>
+    <i class="pi pi-search custom-icon"></i>
+    <i class="pi pi-refresh custom-icon"></i>
+    <i class="pi pi-filter custom-icon"></i>
+  </div>
+  <div class="p-toolbar-group-right">
+    <!-- <p-button (click)="openModal()" class="blue-outlined-button mr-5">Add +</p-button> -->
+    <p-button icon="pi pi-print" text severity="secondary"></p-button>
+    <p-button icon="pi pi-upload" class="ml-3" text severity="secondary"></p-button>
+  </div>
+</p-toolbar>
+
+<div class="table-responsive w-full mt-10">
+  <table class="table table-bordered w-100">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <!-- <th>Email</th> -->
+        <th>Type</th>
+        <th>Department</th>
+        <th>Module</th>
+        <!-- <th>Hire Date</th> -->
+        <th>Status</th>
+        <th>Availability</th>
+        <th>Allocated Hours</th>
+        <th>Utilization Rate</th>
+        <th>Project Name</th>
+        <th>Role</th>
+        <th>Skill Set</th>
+        <th>Location</th>
+        <th>Manager</th>
+        <th>Shift Timing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let resource of resources">
+        <td>{{ resource.employeeId }}</td>
+        <td>{{ resource.name }}</td>
+        <!-- <td>{{ resource.email }}</td> -->
+        <td>{{ resource.type }}</td>
+        <td>{{ resource.department }}</td>
+        <td>{{ resource.module }}</td>
+        <!-- <td>{{ resource.hireDate }}</td> -->
+        <td [ngClass]="{'text-green-600': resource.status === 'Active', 'text-red-600': resource.status === 'In-Active'}">
+          {{ resource.status }}
+        </td>
+        <td>{{ resource.availability }}%</td>
+        <td>{{ resource.allocatedHours }} hours</td>
+        <td [ngClass]="{'text-green-600': resource.utilizationRate > 85, 'text-red-600': resource.utilizationRate <= 85}">
+          {{ resource.utilizationRate }}%
+        </td>
+        <td>{{ resource.projectName }}</td>
+        <td>{{ resource.role }}</td>
+        <td>{{ resource.skillSet.join(', ') }}</td>
+        <td>{{ resource.location }}</td>
+        <td>{{ resource.manager }}</td>
+        <td>{{ resource.shiftTiming }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -32,7 +32,13 @@
         <td>{{ task.Resource }}</td>
         <td>{{ task['Start Date'] }}</td>
         <td>{{ task['End Date'] }}</td>
-        <td>{{ task.Status }}</td>
+        <td [ngClass]="{
+          'text-green-600': task.Status === 'Completed',
+          'text-red-600': task.Status === 'On-Hold',
+          'text-yellow-600': task.Status === 'In-Progress'
+        }">
+          {{ task.Status }}
+        </td>
       </tr>
       }
     </tbody>
