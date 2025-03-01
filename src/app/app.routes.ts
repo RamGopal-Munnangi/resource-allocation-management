@@ -24,6 +24,7 @@ import { ApiIntegrationComponent } from './components/system-administration/api-
 import { SystemLogsComponent } from './components/system-administration/system-logs/system-logs.component';
 import { ProjectsComponent } from './components/project-management/projects/projects.component';
 import { LoginComponent } from './components/login/login.component';
+import { SupportticketsComponent } from './supporttickets/supporttickets.component';
 import { NotificatinsComponent } from './components/notifications/notificatins/notificatins.component';
 
 export const routes: Routes = [
@@ -49,7 +50,8 @@ export const routes: Routes = [
   { path: 'cost-financial-analysis', component: FinancialAnalysisComponent },
   { path: 'user-roles-permissions', component: UserRolesComponent },
   { path: 'api-data-integration', component: ApiIntegrationComponent },
-  { path: 'system-logs-audits', component: SystemLogsComponent }
+  { path: 'system-logs-audits', component: SystemLogsComponent },
+  { path: 'support-tickets', component:SupportticketsComponent}
 ];
 
 @NgModule({

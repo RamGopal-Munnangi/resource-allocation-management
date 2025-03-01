@@ -30,9 +30,8 @@
     "moduleName": "Leave Management",
     "submodules": [
       { "id": 401, "name": "Reports & Analytics", "icon": "pi pi-box" },
-      { "id": 403, "name": "Notification & Alerts", "icon": "pi pi-shopping-cart" },
-      { "id": 402, "name": "Leaves Application", "icon": "pi pi-wrench" }
-
+      { "id": 402, "name": "Notification & Alerts", "icon": "pi pi-shopping-cart" },
+      { "id": 403, "name": "Leaves Application", "icon": "pi pi-wrench" }
     ]
   },
   {
@@ -55,20 +54,30 @@
   },
   {
     "id": 7,
-    "moduleName": "Administration & Access Control",
+    "moduleName": "Support Desk",
     "submodules": [
-      { "id": 701, "name": "User Roles & Permissions", "icon": "pi pi-lock" },
-      { "id": 702, "name": "API & Data Integration", "icon": "pi pi-cloud" },
-      { "id": 703, "name": "System Logs & Audits", "icon": "pi pi-file" }
+      { "id": 701, "name": "Dashboard & Analytics", "icon": "pi pi-lock" },
+      { "id": 702, "name": "Support Tickets", "icon": "pi pi-cloud" },
+      { "id": 703, "name": "Assign/Modify Tickets", "icon": "pi pi-file" },
+      { "id": 704, "name": "Client Communication", "icon": "pi pi-file" }
     ]
   },
   {
     "id": 8,
+    "moduleName": "Administration & Access Control",
+    "submodules": [
+      { "id": 801, "name": "User Roles & Permissions", "icon": "pi pi-lock" },
+      { "id": 802, "name": "API & Data Integration", "icon": "pi pi-cloud" },
+      { "id": 803, "name": "System Logs & Audits", "icon": "pi pi-file" }
+    ]
+  },
+  {
+    "id": 9,
     "moduleName": "Notifications & Alerts",
     "submodules": [
-      { "id": 701, "name": "Notifications", "icon": "pi pi-lock" },
-      { "id": 702, "name": "Custom & Emergency Notifications", "icon": "pi pi-cloud" },
-      { "id": 703, "name": "Leave Reminders", "icon": "pi pi-file" }
+      { "id": 901, "name": "Notifications", "icon": "pi pi-lock" },
+      { "id": 902, "name": "Custom & Emergency Notifications", "icon": "pi pi-cloud" },
+      { "id": 903, "name": "Leave Reminders", "icon": "pi pi-file" }
     ]
   }
 ]
